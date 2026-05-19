@@ -59,7 +59,6 @@ button { cursor: pointer; font-family: var(--font-b); }
   position:absolute;
   will-change:transform, border-radius;
   transform-origin:50% 55%;
-  transform:translateZ(0);
   backface-visibility:hidden;
 }
 
@@ -68,19 +67,25 @@ button { cursor: pointer; font-family: var(--font-b); }
   width:520px; height:520px;
   background:rgba(144,224,239,.2);
   top:-2%; right:-10%;
-  animation:heroMorph1 24s cubic-bezier(.45,.1,.55,.95) infinite;
+  border-radius:52% 48% 61% 39%/48% 55% 45% 55%;
+  transform:translateZ(0) scaleX(1) scaleY(1);
+  animation:heroMorph1 24s cubic-bezier(.45,.1,.55,.95) infinite both;
 }
 .blob-bg-3 {
   width:400px; height:400px;
   background:rgba(247,127,0,.17);
   top:23%; right:6%;
-  animation:heroMorph2 27s cubic-bezier(.43,.07,.53,.96) infinite 2.4s;
+  border-radius:44% 56% 50% 50%/54% 46% 58% 42%;
+  transform:translateZ(0) rotate(6deg) scale(1);
+  animation:heroMorph2 27s cubic-bezier(.43,.07,.53,.96) 2.4s infinite both;
 }
 .blob-bg-5 {
   width:500px; height:500px;
   background:rgba(202,240,248,.18);
   top:53%; right:-9%;
-  animation:heroMorph4 28s cubic-bezier(.46,.03,.54,.93) infinite 4.8s;
+  border-radius:48% 52% 56% 44%/52% 48% 50% 50%;
+  transform:translateZ(0) scale(1);
+  animation:heroMorph4 28s cubic-bezier(.46,.03,.54,.93) 4.8s infinite both;
 }
 
 /* LEFT · top → mid → low: orange → blue → orange */
@@ -88,19 +93,25 @@ button { cursor: pointer; font-family: var(--font-b); }
   width:490px; height:490px;
   background:rgba(247,127,0,.18);
   top:7%; left:-11%;
-  animation:heroMorph3 23s cubic-bezier(.4,.05,.58,1.02) infinite .9s;
+  border-radius:58% 42% 48% 52%/46% 54% 44% 56%;
+  transform:translateZ(0) scale(1);
+  animation:heroMorph3 23s cubic-bezier(.4,.05,.58,1.02) .9s infinite both;
 }
 .blob-bg-4 {
   width:420px; height:420px;
   background:rgba(144,224,239,.16);
   top:39%; left:-9%;
-  animation:heroMorph1 26s cubic-bezier(.45,.1,.55,.95) infinite 3.6s;
+  border-radius:52% 48% 61% 39%/48% 55% 45% 55%;
+  transform:translateZ(0) scaleX(1) scaleY(1);
+  animation:heroMorph1 26s cubic-bezier(.45,.1,.55,.95) 3.6s infinite both;
 }
 .blob-bg-6 {
   width:540px; height:540px;
   background:rgba(247,127,0,.15);
   top:69%; left:-11%;
-  animation:heroMorph2 25s cubic-bezier(.43,.07,.53,.96) infinite 1.5s;
+  border-radius:44% 56% 50% 50%/54% 46% 58% 42%;
+  transform:translateZ(0) rotate(6deg) scale(1);
+  animation:heroMorph2 25s cubic-bezier(.43,.07,.53,.96) 1.5s infinite both;
 }
 
 /* ── Keyframes ── */
@@ -562,7 +573,6 @@ nav,main,footer,section,
   position:absolute;
   will-change:transform, border-radius;
   transform-origin:50% 55%;
-  transform:translateZ(0);
   backface-visibility:hidden;
 }
 
@@ -634,12 +644,15 @@ nav,main,footer,section,
   }
 }
 
-/* Hero blobs — top-right orange, top-left light blue; bottom corners light blue */
+/* Hero blobs — top-right orange, top-left light blue; bottom corners light blue
+   Starter radii/transforms match heroMorph[N] first keyframes + `both` so delayed blobs don’t flash. */
 .hero-blob-1 {
   width:440px; height:440px;
   background:rgba(247,127,0,.38);
   top:-26%; right:-12%;
-  animation:heroMorph1 17s cubic-bezier(.45,.1,.55,.95) infinite;
+  border-radius:52% 48% 61% 39%/48% 55% 45% 55%;
+  transform:translateZ(0) scaleX(1) scaleY(1);
+  animation:heroMorph1 17s cubic-bezier(.45,.1,.55,.95) infinite both;
 }
 
 /* Bottom-left · light blue */
@@ -647,7 +660,9 @@ nav,main,footer,section,
   width:340px; height:340px;
   background:rgba(202,240,248,.4);
   bottom:-20%; left:-10%;
-  animation:heroMorph2 21s cubic-bezier(.43,.07,.53,.96) infinite 1.8s;
+  border-radius:44% 56% 50% 50%/54% 46% 58% 42%;
+  transform:translateZ(0) rotate(6deg) scale(1);
+  animation:heroMorph2 21s cubic-bezier(.43,.07,.53,.96) 1.8s infinite both;
 }
 
 /* Top-left · light blue */
@@ -655,7 +670,9 @@ nav,main,footer,section,
   width:160px; height:160px;
   background:rgba(144,224,239,.42);
   top:4%; left:-2%;
-  animation:heroMorph3 15s cubic-bezier(.4,.05,.58,1.02) infinite .6s;
+  border-radius:58% 42% 48% 52%/46% 54% 44% 56%;
+  transform:translateZ(0) scale(1);
+  animation:heroMorph3 15s cubic-bezier(.4,.05,.58,1.02) .6s infinite both;
 }
 
 /* Bottom-right · light blue */
@@ -663,7 +680,9 @@ nav,main,footer,section,
   width:280px; height:280px;
   background:rgba(144,224,239,.36);
   bottom:-14%; right:-7%;
-  animation:heroMorph4 19s cubic-bezier(.46,.03,.54,.93) infinite 2.9s;
+  border-radius:48% 52% 56% 44%/52% 48% 50% 50%;
+  transform:translateZ(0) scale(1);
+  animation:heroMorph4 19s cubic-bezier(.46,.03,.54,.93) 2.9s infinite both;
 }
 
 .home-hero {
