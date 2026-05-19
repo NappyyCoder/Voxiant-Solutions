@@ -8,7 +8,7 @@ export default function Home() {
           HERO — Welcome to Voxiant Solutions
       ════════════════════════════════════ */}
       <div className="home-hero-wrap">
-        {/* Decorative blobs — 4 corners */}
+        {/* Decorative blobs — orange + light blue, alternate L/R */}
         <div className="hero-blobs-wrap" aria-hidden="true">
           <div className="hero-blob-1" />
           <div className="hero-blob-2" />
@@ -17,24 +17,36 @@ export default function Home() {
         </div>
         <div className="home-hero">
           <div className="home-hero-content">
-            <h1>Welcome to<br />Voxiant Solutions</h1>
-            <p>
-              We offer value-added solutions that drive your business to the next level.
-              We create strong brand identity, design clean responsive websites with
-              e-commerce and blog enhancements, and rank you high with search-engine
-              optimization. Unlike generic marketing firms, our solutions are designed
-              around <strong>you</strong> — to meet your needs and your customers&apos; needs.
+            <span className="hero-eyebrow" data-reveal="up">Creative Digital Agency</span>
+            <h1 data-reveal="up">Voxiant<br />Clear thinking. Powerful brands.</h1>
+            <p data-reveal="up">
+              Strategy and creative that move together: identity, responsive sites, and search presence, shaped for your outcomes and never boxed into a cookie cutter plan.
             </p>
+            <div className="hero-meta" data-reveal="up">
+              <span>50+ Projects</span>
+              <span className="hero-meta-sep" aria-hidden="true" />
+              <span>8 Services</span>
+              <span className="hero-meta-sep" aria-hidden="true" />
+              <span>Brand to Launch</span>
+            </div>
           </div>
           <div className="home-hero-graphic">
             <Link href="/contact" className="hero-logo-cta">
-              {/* logo + symmetric rings wrapped together */}
+              {/* logo + rings + orbit */}
               <div className="hero-logo-wrap">
+                {/* soft glow plate behind logo */}
+                <span className="hero-logo-glow" aria-hidden="true" />
+
+                {/* pulsing rings */}
                 <div className="hero-logo-cta-visual" aria-hidden="true">
                   <span className="hero-logo-ring hero-logo-ring--1" />
                   <span className="hero-logo-ring hero-logo-ring--2" />
                   <span className="hero-logo-ring hero-logo-ring--3" />
                 </div>
+
+                {/* static orbit ring */}
+                <span className="hero-orbit-ring" aria-hidden="true" />
+
                 <Image
                   src="/3-D-Voxiant-logo.png"
                   alt="Voxiant Solutions — click to get in touch"
@@ -46,8 +58,9 @@ export default function Home() {
                 />
               </div>
 
-              {/* CTA pill — always visible */}
+              {/* CTA pill */}
               <span className="hero-cta-pill">
+                <span className="hero-cta-live-dot" aria-hidden="true" />
                 <span className="hero-cta-pill-shimmer" aria-hidden="true" />
                 <span className="hero-cta-pill-text">Start Your Project</span>
                 <svg className="hero-cta-pill-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
