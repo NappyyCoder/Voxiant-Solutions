@@ -2,21 +2,7 @@
 
 import Link from 'next/link'
 import { useActionState } from 'react'
-
-type ContactResult = { ok: boolean; message: string }
-
-async function submitForm(_prev: ContactResult | null, formData: FormData): Promise<ContactResult> {
-  await new Promise((r) => setTimeout(r, 900))
-  const email = (formData.get('email') as string)?.trim()
-  if (!email) {
-    return { ok: false, message: 'Please add your email so we can reply.' }
-  }
-  const basic = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-  if (!basic.test(email)) {
-    return { ok: false, message: "That email doesn't look quite right; please double-check it." }
-  }
-  return { ok: true, message: "Thanks! We'll be in touch shortly." }
-}
+import { submitContactForm, type ContactResult } from './actions'
 
 function ArrowIcon() {
   return (
@@ -27,7 +13,10 @@ function ArrowIcon() {
 }
 
 export default function ContactPage() {
-  const [state, action, pending] = useActionState(submitForm, null)
+  const [state, action, pending] = useActionState<ContactResult | null, FormData>(
+    submitContactForm,
+    null
+  )
 
   return (
     <>
@@ -78,6 +67,11 @@ export default function ContactPage() {
                   {state.message}
                 </p>
               ) : null}
+              {/* Honeypot — hidden from users, not from bots */}
+              <div className="contact-honeypot" aria-hidden="true">
+                <label htmlFor="c-website">Website</label>
+                <input id="c-website" type="text" name="website" tabIndex={-1} autoComplete="off" />
+              </div>
               <div className="form-row">
                 <div className="form-group contact-field">
                   <label htmlFor="c-first">First name</label>

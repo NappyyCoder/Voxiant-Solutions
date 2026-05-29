@@ -16,6 +16,20 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+### Contact form email
+
+Submissions from `/contact` are sent with [Resend](https://resend.com) to **voxiantsolutions@gmail.com** (configurable).
+
+1. Copy `.env.example` to `.env.local` and set `RESEND_API_KEY` from the [Resend API keys](https://resend.com/api-keys) page.
+2. For local testing, `RESEND_FROM_EMAIL` can stay as `Voxiant Solutions <onboarding@resend.dev>` (Resend’s test sender).
+3. In **Vercel** → Project → **Settings** → **Environment Variables**, add the same variables for Production (and Preview if needed), then redeploy.
+
+| Variable | Purpose |
+|----------|---------|
+| `RESEND_API_KEY` | Required to send mail |
+| `CONTACT_TO_EMAIL` | Inbox for inquiries (default: `voxiantsolutions@gmail.com`) |
+| `RESEND_FROM_EMAIL` | “From” address shown in Gmail |
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
