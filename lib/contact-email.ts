@@ -1,4 +1,5 @@
 import { Resend } from 'resend'
+import { readEnv } from '@/lib/env'
 
 export type ContactFormPayload = {
   firstName: string
@@ -11,15 +12,16 @@ export type ContactFormPayload = {
 
 const DEFAULT_TO = 'voxiantsolutions@gmail.com'
 
-function getToAddress(): string {
-  return process.env.CONTACT_TO_EMAIL?.trim() || DEFAULT_TO
+export function getToAddress(): string {
+  return readEnv('CONTACT_TO_EMAIL') || DEFAULT_TO
 }
 
-function getFromAddress(): string {
-  return (
-    process.env.RESEND_FROM_EMAIL?.trim() ||
-    'Voxiant Solutions <onboarding@resend.dev>'
-  )
+export function getFromAddress(): string {
+  return readEnv('RESEND_FROM_EMAIL') || 'Voxiant Solutions <onboarding@resend.dev>'
+}
+
+export function getResendApiKey(): string | undefined {
+  return readEnv('RESEND_API_KEY')
 }
 
 function escapeHtml(value: string): string {
@@ -75,11 +77,13 @@ export function isValidContactEmail(email: string): boolean {
 }
 
 export async function sendContactEmail(data: ContactFormPayload): Promise<void> {
-  const apiKey = process.env.RESEND_API_KEY?.trim()
+  const apiKey = getResendApiKey()
   if (!apiKey) {
     throw new Error('RESEND_API_KEY is not configured')
   }
 
+  const from = getFromAddress()
+  const to = getToAddress()
   const resend = new Resend(apiKey)
   const name = [data.firstName, data.lastName].filter(Boolean).join(' ').trim()
   const subject = name
@@ -87,8 +91,8 @@ export async function sendContactEmail(data: ContactFormPayload): Promise<void> 
     : `Voxiant inquiry from ${data.email}`
 
   const { error } = await resend.emails.send({
-    from: getFromAddress(),
-    to: [getToAddress()],
+    from,
+    to: [to],
     replyTo: data.email,
     subject,
     html: buildEmailHtml(data),
@@ -96,6 +100,12 @@ export async function sendContactEmail(data: ContactFormPayload): Promise<void> 
   })
 
   if (error) {
+    console.error('[contact-email] Resend rejected send', {
+      from,
+      to,
+      replyTo: data.email,
+      message: error.message,
+    })
     throw new Error(error.message)
   }
 }

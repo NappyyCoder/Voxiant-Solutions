@@ -1,6 +1,12 @@
 'use server'
 
-import { isValidContactEmail, sendContactEmail } from '@/lib/contact-email'
+import {
+  getFromAddress,
+  getResendApiKey,
+  getToAddress,
+  isValidContactEmail,
+  sendContactEmail,
+} from '@/lib/contact-email'
 
 export type ContactResult = { ok: boolean; message: string }
 
@@ -42,8 +48,13 @@ export async function submitContactForm(
     await sendContactEmail(payload)
     return { ok: true, message: "Thanks! We'll be in touch shortly." }
   } catch (err) {
-    console.error('[contact]', err)
-    const configured = Boolean(process.env.RESEND_API_KEY?.trim())
+    const apiKey = getResendApiKey()
+    console.error('[contact]', err, {
+      from: getFromAddress(),
+      to: getToAddress(),
+      apiKeyPrefix: apiKey ? `${apiKey.slice(0, 6)}...` : null,
+    })
+    const configured = Boolean(apiKey)
     if (!configured) {
       return {
         ok: false,
