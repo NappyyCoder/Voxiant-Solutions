@@ -92,7 +92,9 @@ export default function Home() {
             <div className="home-service-card" data-reveal="up" data-delay="1">
               <div className="hsc-icon">
                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" aria-hidden="true">
-                  <path d="M30 4L12 28H24L20 48L40 24H28L30 4Z" stroke="currentColor" strokeWidth="2.4" strokeLinejoin="round" strokeLinecap="round"/>
+                  <path d="M9 21H17L35 12V40L17 31H9V21Z" stroke="currentColor" strokeWidth="2.4" strokeLinejoin="round"/>
+                  <path d="M17 31V38C17 39.1 17.9 40 19 40H22C23.1 40 24 39.1 24 38V34" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M40 19C43 22 43 30 40 33" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"/>
                 </svg>
               </div>
               <h3>Marketing</h3>
@@ -103,9 +105,11 @@ export default function Home() {
             <div className="home-service-card" data-reveal="up" data-delay="2">
               <div className="hsc-icon">
                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" aria-hidden="true">
-                  <path d="M6 26C6 26 14 13 26 13C38 13 46 26 46 26C46 26 38 39 26 39C14 39 6 26 6 26Z" stroke="currentColor" strokeWidth="2.4" strokeLinejoin="round"/>
-                  <circle cx="26" cy="26" r="5.5" stroke="currentColor" strokeWidth="2.4"/>
-                  <path d="M16 19L14 14M22 16L21 11M30 16L31 11M36 19L38 14" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/>
+                  <path d="M26 8C15 8 8 15 8 25C8 33 14 39 22 39C24.2 39 26 37.2 26 35C26 33.3 27.3 32 29 32H33C39 32 44 27.5 44 21.5C44 13.5 36 8 26 8Z" stroke="currentColor" strokeWidth="2.4" strokeLinejoin="round"/>
+                  <circle cx="16" cy="23" r="2.2" fill="currentColor"/>
+                  <circle cx="22" cy="16" r="2.2" fill="currentColor"/>
+                  <circle cx="31" cy="16" r="2.2" fill="currentColor"/>
+                  <circle cx="37" cy="22" r="2.2" fill="currentColor"/>
                 </svg>
               </div>
               <h3>Branding</h3>
@@ -116,9 +120,11 @@ export default function Home() {
             <div className="home-service-card" data-reveal="up" data-delay="3">
               <div className="hsc-icon">
                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" aria-hidden="true">
-                  <path d="M8 14L20 26L8 38" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M21 14L33 26L21 38" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M34 14L46 26L34 38" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/>
+                  <rect x="8" y="10" width="36" height="32" rx="3" stroke="currentColor" strokeWidth="2.4"/>
+                  <path d="M8 19H44" stroke="currentColor" strokeWidth="2.4"/>
+                  <circle cx="13" cy="14.5" r="1.3" fill="currentColor"/>
+                  <circle cx="17.5" cy="14.5" r="1.3" fill="currentColor"/>
+                  <path d="M21 24L34 29.5L28.5 31.5L31.5 38L28 39.5L25 33L21 36V24Z" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round"/>
                 </svg>
               </div>
               <h3>UX / UI</h3>
@@ -129,8 +135,14 @@ export default function Home() {
             <div className="home-service-card" data-reveal="up" data-delay="4">
               <div className="hsc-icon">
                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" aria-hidden="true">
-                  <path d="M10 10L42 42M42 10L10 42" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round"/>
-                  <circle cx="26" cy="26" r="18" stroke="currentColor" strokeWidth="2.2"/>
+                  <rect x="6" y="11" width="40" height="30" rx="3" stroke="currentColor" strokeWidth="2.4"/>
+                  <path d="M6 19H46" stroke="currentColor" strokeWidth="2.4"/>
+                  <circle cx="11.5" cy="15" r="1.3" fill="currentColor"/>
+                  <circle cx="16" cy="15" r="1.3" fill="currentColor"/>
+                  <circle cx="20.5" cy="15" r="1.3" fill="currentColor"/>
+                  <path d="M22 26L18 30.5L22 35" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M30 26L34 30.5L30 35" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M27.5 24L24.5 37" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"/>
                 </svg>
               </div>
               <h3>Web Applications</h3>
