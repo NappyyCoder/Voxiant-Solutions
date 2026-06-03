@@ -13,8 +13,9 @@ export default function Footer() {
         style={{ height: '86px', width: 'auto' }}
       />
       <p className="footer-desc">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna.
+        Voxiant Solutions delivers web, branding, and marketing built around your
+        business and your customers—from responsive sites and e-commerce to SEO,
+        design, and social media.
       </p>
       <div className="footer-social">
         <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
