@@ -120,7 +120,7 @@ export default async function ProjectPage({
         <h2 data-reveal="up">Want Something Like This?</h2>
         <div className="cta-line" data-reveal="scale" data-delay="1" />
         <p data-reveal="up" data-delay="2">
-          Tell us about your project and we&apos;ll put together a plan built around your vision.
+          Tell us about your project and we&apos;ll outline scope, timeline, and next steps.
         </p>
         <div className="project-cta-btns" data-reveal="up" data-delay="3">
           <Link href="/contact" className="btn btn-outline">Get in touch</Link>

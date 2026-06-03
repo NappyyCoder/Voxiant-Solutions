@@ -20,7 +20,7 @@ export default function Home() {
             <span className="hero-eyebrow" data-reveal="up">Creative Digital Agency</span>
             <h1 data-reveal="up">Voxiant<br />Clear thinking. Powerful brands.</h1>
             <p data-reveal="up">
-              Strategy and creative that move together: identity, responsive sites, and search presence, shaped for your outcomes and never boxed into a cookie cutter plan.
+              Strategy and design work together: brand identity, responsive websites, and SEO—built around your goals, not a one-size-fits-all plan.
             </p>
             <div className="hero-meta" data-reveal="up">
               <span>50+ Projects</span>
@@ -83,7 +83,7 @@ export default function Home() {
           {/* heading */}
           <div className="home-services-header" data-reveal="up">
             <span className="home-services-eyebrow">What We Do</span>
-            <h2>Built for Every Stage of Your Business</h2>
+            <h2>Services That Fit Your Business</h2>
           </div>
 
           {/* 4-column icon grid */}
@@ -98,7 +98,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3>Marketing</h3>
-              <p>We fuel creativity with collaborative brainstorming, transforming raw ideas into actionable strategies for your brand.</p>
+              <p>We plan campaigns and messaging with you, then turn them into content and channels you can run.</p>
               <span className="hsc-hover-line" aria-hidden="true" />
             </div>
 
@@ -113,7 +113,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3>Branding</h3>
-              <p>Discover the power of innovative thinking and stand out in any market with cutting-edge solutions that inspire brilliance.</p>
+              <p>We build logos, color systems, and brand guidelines that look consistent across your website, print, and social channels.</p>
               <span className="hsc-hover-line" aria-hidden="true" />
             </div>
 
@@ -128,7 +128,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3>UX / UI</h3>
-              <p>Our innovative solutions combine technology and creativity to help you stay ahead in a competitive world.</p>
+              <p>We design clear layouts and flows so people can find what they need quickly on web and mobile.</p>
               <span className="hsc-hover-line" aria-hidden="true" />
             </div>
 
@@ -146,7 +146,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3>Web Applications</h3>
-              <p>From strategy to execution, we craft solutions that are both innovative and practical, delivering measurable outcomes.</p>
+              <p>We build web apps from planning through launch, with features scoped to your workflow and goals.</p>
               <span className="hsc-hover-line" aria-hidden="true" />
             </div>
 
@@ -187,7 +187,7 @@ export default function Home() {
               <span /><p>Modern Websites, Blogs, E-Commerce &amp; More</p>
             </div>
             <h2>Web Solutions</h2>
-            <p>We build strong websites that load fast, are user-centered, and structured to appeal at first glance — giving your business a real competitive advantage online.</p>
+            <p>We build websites that load fast, read clearly, and help visitors take the next step—on phones, tablets, and desktops.</p>
             <Link href="/solutions" className="btn btn-outline">More information</Link>
           </div>
         </div>
@@ -201,9 +201,9 @@ export default function Home() {
           <div className="split-content-inner">
             <h2>Graphic Solutions</h2>
             <div className="split-label-line" style={{ marginTop: 10 }}>
-              <span /><p>Stunning Graphic Design, Email Marketing, Print &amp; More</p>
+              <span /><p>Graphic Design, Email Marketing, Print &amp; More</p>
             </div>
-            <p>From logos to large-scale posters, we design user-centered graphic content with a creativity targeted to address your audience and elevate your brand.</p>
+            <p>From logos to posters, we design materials that match your audience and stay on brand.</p>
             <Link href="/solutions" className="btn btn-outline">More information</Link>
           </div>
         </div>
@@ -224,9 +224,9 @@ export default function Home() {
           CTA — Hire Voxiant
       ════════════════════════════════════ */}
       <section className="cta-section">
-        <h2 data-reveal="up">Hire Voxiant &amp; Get the Job Done Right</h2>
+        <h2 data-reveal="up">Ready to Start Your Project?</h2>
         <div className="cta-line" data-reveal="scale" data-delay="1" />
-        <p data-reveal="up" data-delay="2">Contact us today to begin your next project.</p>
+        <p data-reveal="up" data-delay="2">Contact us to talk through your goals, timeline, and budget.</p>
         <Link href="/contact" className="btn btn-outline" data-reveal="up" data-delay="3">
           Get in touch
         </Link>

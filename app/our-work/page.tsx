@@ -20,8 +20,8 @@ export default function OurWorkPage() {
           <h1>Our Work</h1>
           <div className="cs-divider" />
           <p>
-            Years of experience crafting digital experiences that put users first
-            and clients ahead of the competition. Click any project to see the full process.
+            Selected projects showing our process from concept to delivery.
+            Click any project to see how we built it.
           </p>
         </div>
       </div>
@@ -75,7 +75,7 @@ export default function OurWorkPage() {
         <h2 data-reveal="up">Have a Project in Mind?</h2>
         <div className="cta-line" data-reveal="scale" data-delay="1" />
         <p data-reveal="up" data-delay="2">
-          Share your idea and we&apos;ll show you featured samples that match your vision.
+          Tell us about your project and we&apos;ll share relevant examples from our portfolio.
         </p>
         <Link href="/contact" className="btn btn-outline" data-reveal="up" data-delay="3">
           Get in touch

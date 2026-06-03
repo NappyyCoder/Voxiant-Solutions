@@ -22,7 +22,7 @@ export const projects: Project[] = [
     slug: 'movie-poster',
     title: 'Movie Poster',
     category: 'Graphic Design',
-    tagline: 'Cinematic storytelling through print.',
+    tagline: 'Movie poster design from concept to print.',
     description:
       'A full cinematic poster designed from the ground up — concept to print-ready file. Every element, from typography to photo composition, was crafted to capture the mood and narrative of the film.',
     cover: '/work-poster-1.png',
@@ -84,9 +84,9 @@ export const projects: Project[] = [
     slug: 'truck-wrap',
     title: 'Truck Wrap',
     category: 'Vehicle Branding',
-    tagline: 'A moving billboard that turns heads on every road.',
+    tagline: 'Vehicle wrap design built for visibility on the road.',
     description:
-      'Bold vehicle wrap design that transforms a fleet truck into a high-impact mobile advertisement. From concept through print-ready artwork, every inch of the vehicle surface was treated as a canvas for brand storytelling.',
+      'Vehicle wrap design for a fleet truck, from concept through print-ready artwork. The full vehicle surface was used for clear, readable brand messaging.',
     cover: '/work-truck-1.png',
     coverAlt: 'Truck wrap design',
     accentColor: '#00b4d8',
@@ -194,9 +194,9 @@ export const projects: Project[] = [
     slug: 'celery-bog',
     title: 'Celery Bog',
     category: 'Environmental Design',
-    tagline: 'Nature\'s story, told through design.',
+    tagline: 'Design for a nature preserve that explains the habitat clearly.',
     description:
-      'Visual design work capturing the ecological character of Celery Bog — a nature preserve project blending scientific accuracy with approachable, visually rich graphic design that invites the public in.',
+      'Visual design for Celery Bog, a nature preserve project that combines accurate information with approachable graphics for the public.',
     cover: '/work-celery-1.png',
     coverAlt: 'Celery Bog design',
     accentColor: '#4a7c59',
@@ -232,7 +232,7 @@ export const projects: Project[] = [
       {
         title: 'Final Design',
         description:
-          'The finished design — ready for print and environmental installation. A piece that invites visitors to engage with and appreciate the natural world that surrounds them.',
+          'The finished design, ready for print and environmental installation—a piece that helps visitors understand and explore the preserve.',
         image: '/work-celery-5.png',
         alt: 'Final Celery Bog design',
       },
@@ -242,9 +242,9 @@ export const projects: Project[] = [
     slug: 'corec',
     title: 'COREC',
     category: 'Brand Identity',
-    tagline: 'A brand identity built to energize and endure.',
+    tagline: 'Brand identity for a community organization.',
     description:
-      'Comprehensive brand identity design for COREC — from logo exploration through a full brand system. Every touchpoint was designed to communicate energy, community, and lasting professionalism.',
+      'Brand identity design for COREC—from logo exploration through a full brand system covering print, digital, and signage.',
     cover: '/work-corec-1.png',
     coverAlt: 'COREC brand identity',
     accentColor: '#f77f00',
@@ -331,9 +331,9 @@ export const projects: Project[] = [
     slug: 'uxui-redesign',
     title: 'UX / UI Redesign',
     category: 'UX / UI Design',
-    tagline: 'Redesigned from the user\'s perspective, outward.',
+    tagline: 'UX/UI redesign based on user research and testing.',
     description:
-      'A comprehensive UX/UI redesign that audited an existing digital product, identified friction points, and delivered a cleaner, more intuitive interface grounded in user research and modern design principles.',
+      'A UX/UI redesign that audited an existing product, identified friction points, and delivered a cleaner, more intuitive interface based on user research.',
     cover: '/work-uxui-1.png',
     coverAlt: 'UX/UI redesign',
     accentColor: '#7b2ff7',

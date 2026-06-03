@@ -37,8 +37,8 @@ export default function ContactPage() {
             <span className="contact-eyebrow">Hire Voxiant</span>
             <h2>Let&apos;s begin your next project</h2>
             <p>
-              Tell us a little about your business and what you&apos;re looking to build, and we&apos;ll get back with
-              a tailored quote and a clear path forward.
+              Tell us a little about your business and what you&apos;re looking to build, and we&apos;ll reply with
+              a quote and next steps.
             </p>
           </div>
 

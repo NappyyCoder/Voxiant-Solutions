@@ -26,7 +26,7 @@ const services = [
     num: '02',
     accent: '#00b4d8',
     title: 'Website Development',
-    text: 'Fast, resilient sites engineered for clarity and conversion, with structure and UX that invite trust on first glance.',
+    text: 'Fast, resilient sites built for clarity and conversion, with clear structure and UX that build trust quickly.',
     icon: (
       <svg viewBox="0 0 48 36" fill="none" width="28" height="22" aria-hidden="true">
         <rect x="3" y="3" width="42" height="30" rx="3" stroke="currentColor" strokeWidth="2.5"/>
@@ -52,7 +52,7 @@ const services = [
     num: '04',
     accent: '#0077b6',
     title: 'Ecommerce Solutions',
-    text: 'Storefront design, catalog logic, and marketing pull through, so carts feel effortless and merchandise gets seen.',
+    text: 'Store design, product setup, and marketing that connects to checkout, so carts feel effortless and products get seen.',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" width="24" height="24" aria-hidden="true">
         <path d="M6 8h6l4 22h22l4-16H14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -104,7 +104,7 @@ const services = [
     num: '08',
     accent: '#074c6d',
     title: 'Social Media',
-    text: 'Tone, cadence, and creative tailored to each platform: bridging your feed, site, and broader brand story.',
+    text: 'Content and posting tailored to each platform, keeping your social posts, website, and brand voice aligned.',
     icon: (
       <svg viewBox="0 0 44 44" fill="none" width="24" height="24" aria-hidden="true">
         <circle cx="11" cy="13" r="4" stroke="currentColor" strokeWidth="2.5"/>
@@ -132,8 +132,8 @@ export default function SolutionsPage() {
           <span className="sol-hero-eyebrow" data-reveal="up">Voxiant Solutions</span>
           <h1 data-reveal="up">What We Build<br />With You</h1>
           <p data-reveal="up">
-            Strategy, design, development, and growth in one disciplined partner. We assemble the right specialists for
-            your goals, not a bloated roster, so timelines stay clear and outcomes stay measurable.
+            Strategy, design, development, and marketing in one coordinated team. We bring in the right specialists for
+            your goals, not a bloated roster, so timelines stay clear and results stay measurable.
           </p>
           <div className="sol-hero-actions" data-reveal="up">
             <Link href="/contact" className="sol-hero-btn-primary">Start a conversation</Link>
@@ -155,7 +155,7 @@ export default function SolutionsPage() {
         <div className="sol-cards-inner">
 
           <div className="sol-section-header" data-reveal="up">
-            <h2>A full-stack partner, assembled for clarity</h2>
+            <h2>One team for strategy, design, development, and marketing</h2>
             <p>
               Pick a single discipline or weave several together. We plan scope, sequencing, and ownership so your
               project never feels fragmented.
@@ -209,8 +209,8 @@ export default function SolutionsPage() {
             <h2>Tell us what you&apos;re solving for</h2>
             <div className="elevate-line" />
             <p>
-              We&apos;ll reply with honest fit, timeline, and a practical path, from a focused sprint to a longer
-              roadmap, matched to how your <strong>team</strong> actually works.
+              We&apos;ll reply with honest fit, timeline, and a practical plan—from a focused sprint to a longer
+              roadmap—matched to how your <strong>team</strong> actually works.
             </p>
             <div className="elevate-btns">
               <Link href="/contact" className="btn btn-white">Book an intro call</Link>

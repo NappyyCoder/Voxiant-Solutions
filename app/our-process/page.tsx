@@ -27,13 +27,13 @@ export default function OurProcessPage() {
         </div>
         <div className="proc-content" data-reveal="right">
           <div className="proc-content-inner">
-            <h2>Meet our digital strategy experts</h2>
+            <h2>How we plan and build your project</h2>
             <div className="proc-line" />
             <p>
               We&apos;re a team of experts in web development, graphic design, email
-              marketing, branding, advertisement creation and social media — with
-              more than <strong>13 years of experience</strong>. We infuse our talents
-              into modern, user-friendly, well thought-out solutions for every project.
+              marketing, branding, advertising, and social media — with
+              more than <strong>13 years of experience</strong>. We apply those skills
+              to build practical, user-friendly solutions for each project.
             </p>
             <Link href="/solutions" className="btn btn-outline-white">Where we specialize</Link>
           </div>
@@ -44,14 +44,13 @@ export default function OurProcessPage() {
       <div className="process-section">
         <div className="proc-content" data-reveal="left">
           <div className="proc-content-inner">
-            <h2>Built for performance &amp; brand growth</h2>
+            <h2>Sites built for speed, usability, and brand consistency</h2>
             <div className="proc-line" />
             <p>
-              Voxiant specializes in developing top-notch, responsive, modern websites —
-              infused with today&apos;s social-media platforms and custom functionality
-              tailored to your needs. We&apos;ve helped entrepreneurs, small businesses
-              and non-profit organizations establish a profound web presence and a
-              competitive edge in their industry.
+              We build responsive websites with social integration and custom features
+              matched to your needs. We&apos;ve helped entrepreneurs, small businesses,
+              and non-profit organizations build a strong online presence in their
+              markets.
             </p>
             <Link href="/our-work" className="btn btn-outline-white">See our work</Link>
           </div>
@@ -83,14 +82,13 @@ export default function OurProcessPage() {
         <div className="proc-content" data-reveal="right" style={{ position: 'relative' }}>
           <ScrollTopButton />
           <div className="proc-content-inner">
-            <h2>Stay present, visible &amp; future-ready</h2>
+            <h2>Keep your site current, findable, and easy to maintain</h2>
             <div className="proc-line" />
             <p>
-              Our mission is to help businesses and organizations establish a profound
-              online presence and grow with modern technology and premiere branding.
-              We keep you in tune with the tools that matter — mobile-responsive
-              websites, blogs, social-media integration and web applications that
-              drive your business to the next level.
+              Our mission is to help businesses and organizations build a strong
+              online presence with up-to-date tools and consistent branding.
+              That includes mobile-friendly websites, blogs, social media integration,
+              and web applications that support how you work today.
             </p>
             <Link href="/contact" className="btn btn-outline-white">Start a project</Link>
           </div>
