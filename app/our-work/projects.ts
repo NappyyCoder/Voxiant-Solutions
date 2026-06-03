@@ -24,7 +24,7 @@ export const projects: Project[] = [
     category: 'Graphic Design',
     tagline: 'Movie poster design from concept to print.',
     description:
-      'A full cinematic poster designed from the ground up — concept to print-ready file. Every element, from typography to photo composition, was crafted to capture the mood and narrative of the film.',
+      'A full cinematic poster designed from the ground up, concept to print-ready file. Every element, from typography to photo composition, was crafted to capture the mood and narrative of the film.',
     cover: '/work-poster-1.png',
     coverAlt: 'Movie poster design',
     accentColor: '#f5c518',
@@ -39,7 +39,7 @@ export const projects: Project[] = [
       {
         title: 'Typography Treatment',
         description:
-          'Title typography is the anchor of any movie poster. We tested multiple typefaces and weights, balancing cinematic impact with legibility across all print sizes — from theater standee to digital thumbnail.',
+          'Title typography is the anchor of any movie poster. We tested multiple typefaces and weights, balancing cinematic impact with legibility across all print sizes, from theater standee to digital thumbnail.',
         image: '/work-poster-2.png',
         alt: 'Typography treatment',
       },
@@ -53,7 +53,7 @@ export const projects: Project[] = [
       {
         title: 'Composition Draft',
         description:
-          'With palette and type locked in, we assembled the first full composition — balancing foreground elements, visual hierarchy, and negative space to guide the eye naturally through the poster.',
+          'With palette and type locked in, we assembled the first full composition, balancing foreground elements, visual hierarchy, and negative space to guide the eye naturally through the poster.',
         image: '/work-poster-4.png',
         alt: 'Composition draft',
       },
@@ -67,14 +67,14 @@ export const projects: Project[] = [
       {
         title: 'Final Refinements',
         description:
-          'Client feedback was incorporated in a focused revision round — fine-tuning contrast, crop, billing block details, and tagline placement for full theatrical compliance.',
+          'Client feedback was incorporated in a focused revision round, fine-tuning contrast, crop, billing block details, and tagline placement for full theatrical compliance.',
         image: '/work-poster-6.png',
         alt: 'Final refinements',
       },
       {
         title: 'Finished Poster',
         description:
-          'The final print-ready poster, delivered in high-resolution press format with bleed and crop marks — ready for both theatrical display and digital release across all platforms.',
+          'The final print-ready poster, delivered in high-resolution press format with bleed and crop marks, ready for both theatrical display and digital release across all platforms.',
         image: '/work-poster-7.png',
         alt: 'Finished movie poster',
       },
@@ -101,7 +101,7 @@ export const projects: Project[] = [
       {
         title: 'Initial Concept Sketch',
         description:
-          'Rough layout sketches explored different design directions — bold side panels, door treatments, and hood graphics were all evaluated for visual impact and brand recognition at speed.',
+          'Rough layout sketches explored different design directions, bold side panels, door treatments, and hood graphics were all evaluated for visual impact and brand recognition at speed.',
         image: '/work-truck-2.png',
         alt: 'Initial concept sketch',
       },
@@ -122,7 +122,7 @@ export const projects: Project[] = [
       {
         title: 'Color Application',
         description:
-          'Brand colors were applied across all panels with careful attention to how they wrap around edges, curves, and recesses — maintaining consistency across the full vehicle surface.',
+          'Brand colors were applied across all panels with careful attention to how they wrap around edges, curves, and recesses, maintaining consistency across the full vehicle surface.',
         image: '/work-truck-5.png',
         alt: 'Color application',
       },
@@ -136,7 +136,7 @@ export const projects: Project[] = [
       {
         title: 'Detail Refinement',
         description:
-          'Client-requested revisions were incorporated — adjusting panel alignment, brightening accent colors, and sharpening logo reproduction for flawless large-format printing.',
+          'Client-requested revisions were incorporated, adjusting panel alignment, brightening accent colors, and sharpening logo reproduction for flawless large-format printing.',
         image: '/work-truck-7.png',
         alt: 'Detail refinement',
       },
@@ -155,7 +155,7 @@ export const projects: Project[] = [
     category: 'Infographic Design',
     tagline: 'Complex data, made instantly readable.',
     description:
-      'A data-rich Chicago Bulls infographic that transforms statistics and narrative into a visually compelling, shareable story. Every design decision — from icon choice to color hierarchy — serves clarity and engagement.',
+      'A data-rich Chicago Bulls infographic that transforms statistics and narrative into a visually compelling, shareable story. Every design decision, from icon choice to color hierarchy, serves clarity and engagement.',
     cover: '/work-bulls-1.png',
     coverAlt: 'Bulls infographic',
     accentColor: '#c9082a',
@@ -163,7 +163,7 @@ export const projects: Project[] = [
       {
         title: 'Data Research & Structure',
         description:
-          'We researched and curated the key statistics and narrative points, then organized them into a logical hierarchy — determining what leads the eye, what supports the story, and what can be cut.',
+          'We researched and curated the key statistics and narrative points, then organized them into a logical hierarchy, determining what leads the eye, what supports the story, and what can be cut.',
         image: '/work-bulls-1.png',
         alt: 'Data research and structure',
       },
@@ -184,7 +184,7 @@ export const projects: Project[] = [
       {
         title: 'Final Infographic',
         description:
-          'The complete infographic — polished typography, consistent color application, and verified data — delivered ready for print, social media, and digital distribution.',
+          'The complete infographic, polished typography, consistent color application, and verified data, delivered ready for print, social media, and digital distribution.',
         image: '/work-bulls-4.png',
         alt: 'Final infographic',
       },
@@ -204,21 +204,21 @@ export const projects: Project[] = [
       {
         title: 'Site Research & Reference',
         description:
-          'We studied the Celery Bog habitat — its flora, fauna, and seasonal characteristics — to ensure the design felt authentic and grounded in the real environment visitors would experience.',
+          'We studied the Celery Bog habitat, its flora, fauna, and seasonal characteristics, to ensure the design felt authentic and grounded in the real environment visitors would experience.',
         image: '/work-celery-1.png',
         alt: 'Site research and reference',
       },
       {
         title: 'Layout Concept',
         description:
-          'Initial layout sketches explored how to structure the visual narrative — balancing informational content with immersive imagery and natural textures that draw the reader into the ecosystem.',
+          'Initial layout sketches explored how to structure the visual narrative, balancing informational content with immersive imagery and natural textures that draw the reader into the ecosystem.',
         image: '/work-celery-2.png',
         alt: 'Layout concept',
       },
       {
         title: 'Color & Texture Study',
         description:
-          'A natural color palette was derived directly from reference photography of the bog — greens, browns, and muted blues that feel true to the ecosystem without sacrificing visual clarity.',
+          'A natural color palette was derived directly from reference photography of the bog, greens, browns, and muted blues that feel true to the ecosystem without sacrificing visual clarity.',
         image: '/work-celery-3.png',
         alt: 'Color and texture study',
       },
@@ -232,7 +232,7 @@ export const projects: Project[] = [
       {
         title: 'Final Design',
         description:
-          'The finished design, ready for print and environmental installation—a piece that helps visitors understand and explore the preserve.',
+          'The finished design, ready for print and environmental installation, a piece that helps visitors understand and explore the preserve.',
         image: '/work-celery-5.png',
         alt: 'Final Celery Bog design',
       },
@@ -244,7 +244,7 @@ export const projects: Project[] = [
     category: 'Brand Identity',
     tagline: 'Brand identity for a community organization.',
     description:
-      'Brand identity design for COREC—from logo exploration through a full brand system covering print, digital, and signage.',
+      'Brand identity design for COREC, from logo exploration through a full brand system covering print, digital, and signage.',
     cover: '/work-corec-1.png',
     coverAlt: 'COREC brand identity',
     accentColor: '#f77f00',
@@ -259,14 +259,14 @@ export const projects: Project[] = [
       {
         title: 'Logo Concepts',
         description:
-          'Multiple logo directions were explored, each reflecting a different dimension of the brand. Sketches ranged from abstract marks to wordmarks to combination logos — giving the client real choices.',
+          'Multiple logo directions were explored, each reflecting a different dimension of the brand. Sketches ranged from abstract marks to wordmarks to combination logos, giving the client real choices.',
         image: '/work-corec-2.png',
         alt: 'Logo concepts',
       },
       {
         title: 'Typography System',
         description:
-          'A type system was selected to complement the approved logo direction — pairing a strong display face with a highly legible body font for seamless application across print and digital.',
+          'A type system was selected to complement the approved logo direction, pairing a strong display face with a highly legible body font for seamless application across print and digital.',
         image: '/work-corec-3.png',
         alt: 'Typography system',
       },
@@ -280,7 +280,7 @@ export const projects: Project[] = [
       {
         title: 'Brand Applications',
         description:
-          'The identity was applied across key brand touchpoints — uniforms, signage, digital graphics, and printed collateral — to test cohesion and consistency across real-world contexts.',
+          'The identity was applied across key brand touchpoints, uniforms, signage, digital graphics, and printed collateral, to test cohesion and consistency across real-world contexts.',
         image: '/work-corec-5.png',
         alt: 'Brand applications',
       },
@@ -294,7 +294,7 @@ export const projects: Project[] = [
       {
         title: 'Final Brand Identity',
         description:
-          'The complete brand system delivered — logo files in all formats, a comprehensive brand style guide, and a full asset library ready for deployment across every channel and medium.',
+          'The complete brand system delivered, logo files in all formats, a comprehensive brand style guide, and a full asset library ready for deployment across every channel and medium.',
         image: '/work-corec-7.png',
         alt: 'Final brand identity',
       },
@@ -306,7 +306,7 @@ export const projects: Project[] = [
     category: 'Web Design',
     tagline: 'Seamless on every screen, every time.',
     description:
-      'A responsive website built with a mobile-first approach — adapting fluidly across phone, tablet, and desktop breakpoints while maintaining visual consistency and user clarity at every size.',
+      'A responsive website built with a mobile-first approach, adapting fluidly across phone, tablet, and desktop breakpoints while maintaining visual consistency and user clarity at every size.',
     cover: '/work-responsive-1.png',
     coverAlt: 'Responsive web design',
     accentColor: '#48cae4',
@@ -321,7 +321,7 @@ export const projects: Project[] = [
       {
         title: 'Mobile Breakpoint',
         description:
-          'The layout was adapted for small screens — reordering content blocks, adjusting typography scales, collapsing navigation patterns, and optimizing touch targets for a seamless mobile experience.',
+          'The layout was adapted for small screens, reordering content blocks, adjusting typography scales, collapsing navigation patterns, and optimizing touch targets for a seamless mobile experience.',
         image: '/work-responsive-2.png',
         alt: 'Mobile breakpoint design',
       },
@@ -341,14 +341,14 @@ export const projects: Project[] = [
       {
         title: 'User Research & Audit',
         description:
-          'We audited the existing interface, documenting pain points and usability gaps through user testing and heuristic evaluation. No assumptions — every change is backed by observed user behavior.',
+          'We audited the existing interface, documenting pain points and usability gaps through user testing and heuristic evaluation. No assumptions, every change is backed by observed user behavior.',
         image: '/work-uxui-1.png',
         alt: 'User research and audit',
       },
       {
         title: 'Wireframe Concepts',
         description:
-          'Low-fidelity wireframes mapped the new information architecture and interaction flows — getting alignment on structure and hierarchy before committing to any visual design decisions.',
+          'Low-fidelity wireframes mapped the new information architecture and interaction flows, getting alignment on structure and hierarchy before committing to any visual design decisions.',
         image: '/work-uxui-2.png',
         alt: 'Wireframe concepts',
       },
@@ -369,7 +369,7 @@ export const projects: Project[] = [
       {
         title: 'Final Polished Design',
         description:
-          'The complete redesigned interface, annotated and delivered as a developer-ready handoff — including component specs, spacing tokens, interaction notes, and asset exports.',
+          'The complete redesigned interface, annotated and delivered as a developer-ready handoff, including component specs, spacing tokens, interaction notes, and asset exports.',
         image: '/work-uxui-5.png',
         alt: 'Final polished design',
       },

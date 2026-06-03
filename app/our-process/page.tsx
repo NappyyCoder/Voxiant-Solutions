@@ -31,7 +31,7 @@ export default function OurProcessPage() {
             <div className="proc-line" />
             <p>
               We&apos;re a team of experts in web development, graphic design, email
-              marketing, branding, advertising, and social media — with
+              marketing, branding, advertising, and social media, with
               more than <strong>13 years of experience</strong>. We apply those skills
               to build practical, user-friendly solutions for each project.
             </p>

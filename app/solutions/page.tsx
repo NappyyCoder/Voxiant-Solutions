@@ -133,7 +133,7 @@ export default function SolutionsPage() {
           <h1 data-reveal="up">What We Build<br />With You</h1>
           <p data-reveal="up">
             Strategy, design, development, and marketing in one coordinated team. We bring in the right specialists for
-            your goals, not a bloated roster, so timelines stay clear and results stay measurable.
+            your goals, so timelines stay clear and results stay measurable.
           </p>
           <div className="sol-hero-actions" data-reveal="up">
             <Link href="/contact" className="sol-hero-btn-primary">Start a conversation</Link>
@@ -209,8 +209,8 @@ export default function SolutionsPage() {
             <h2>Tell us what you&apos;re solving for</h2>
             <div className="elevate-line" />
             <p>
-              We&apos;ll reply with honest fit, timeline, and a practical plan—from a focused sprint to a longer
-              roadmap—matched to how your <strong>team</strong> actually works.
+              We&apos;ll reply with honest fit, timeline, and a practical plan, from a focused sprint to a longer
+              roadmap, matched to how your <strong>team</strong> actually works.
             </p>
             <div className="elevate-btns">
               <Link href="/contact" className="btn btn-white">Book an intro call</Link>

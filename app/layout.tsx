@@ -24,7 +24,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: 'Voxiant Solutions — Web, Branding & Marketing',
   description:
-    'Voxiant Solutions provides web, branding, and marketing services—responsive websites, e-commerce, SEO, graphic design, and social media tailored to your business and customers.',
+    'Voxiant Solutions provides web, branding, and marketing services, including responsive websites, e-commerce, SEO, graphic design, and social media tailored to your business and customers.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -20,7 +20,7 @@ export default function Home() {
             <span className="hero-eyebrow" data-reveal="up">Creative Digital Agency</span>
             <h1 data-reveal="up">Voxiant<br />Clear thinking. Powerful brands.</h1>
             <p data-reveal="up">
-              Strategy and design work together: brand identity, responsive websites, and SEO—built around your goals, not a one-size-fits-all plan.
+              Strategy and design work together: brand identity, responsive websites, and SEO, built around your goals, not a one-size-fits-all plan.
             </p>
             <div className="hero-meta" data-reveal="up">
               <span>50+ Projects</span>
@@ -187,7 +187,7 @@ export default function Home() {
               <span /><p>Modern Websites, Blogs, E-Commerce &amp; More</p>
             </div>
             <h2>Web Solutions</h2>
-            <p>We build websites that load fast, read clearly, and help visitors take the next step—on phones, tablets, and desktops.</p>
+            <p>We build websites that load fast, read clearly, and help visitors take the next step on phones, tablets, and desktops.</p>
             <Link href="/solutions" className="btn btn-outline">More information</Link>
           </div>
         </div>

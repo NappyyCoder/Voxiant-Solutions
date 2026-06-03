@@ -14,7 +14,7 @@ export default function Footer() {
       />
       <p className="footer-desc">
         Voxiant Solutions provides web, branding, and marketing tailored to your
-        business and customers—from responsive sites and e-commerce to SEO,
+        business and customers, from responsive sites and e-commerce to SEO,
         design, and social media.
       </p>
       <div className="footer-social">
