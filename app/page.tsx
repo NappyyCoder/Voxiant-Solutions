@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import HeroBlobs from '@/components/HeroBlobs'
 
 export default function Home() {
   return (
@@ -9,12 +10,7 @@ export default function Home() {
       ════════════════════════════════════ */}
       <div className="home-hero-wrap">
         {/* Decorative blobs — orange + light blue, alternate L/R */}
-        <div className="hero-blobs-wrap" aria-hidden="true">
-          <div className="hero-blob-1" />
-          <div className="hero-blob-2" />
-          <div className="hero-blob-3" />
-          <div className="hero-blob-4" />
-        </div>
+        <HeroBlobs />
         <div className="home-hero">
           <div className="home-hero-content">
             <span className="hero-eyebrow" data-reveal="up">Creative Digital Agency</span>
@@ -71,6 +67,26 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* ════════════════════════════════════
+          SERVICES STRIP — quick scan of what we offer
+      ════════════════════════════════════ */}
+      <section className="services-strip" aria-label="What we offer">
+        <div className="services-strip-inner">
+          <span className="services-strip-label">Services</span>
+          <ul className="services-strip-list">
+            <li>Web Design</li>
+            <li>Blogs</li>
+            <li>E-Commerce</li>
+            <li>Graphic Design</li>
+            <li>Digital Design</li>
+            <li>Print Design</li>
+            <li>Marketing</li>
+            <li>Social Media</li>
+            <li>Motion Graphics</li>
+          </ul>
+        </div>
+      </section>
 
       {/* ════════════════════════════════════
           OUR SERVICES
@@ -171,15 +187,53 @@ export default function Home() {
           WEB SOLUTIONS — image left, text right
       ════════════════════════════════════ */}
       <div className="split-section web-solutions-section">
-        <div className="split-img" style={{ position: 'relative' }} data-reveal="left">
-          <Image
-            src="/work-responsive-1.png"
-            alt="Responsive web design shown across multiple devices"
-            fill
-            sizes="(max-width:900px) 100vw, 50vw"
-            style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
-            loading="lazy"
-          />
+        <div className="split-img web-collage-wrap" data-reveal="left">
+          <div className="web-collage">
+            <figure className="web-collage-item">
+              <Image
+                src="/work-responsive-1.png"
+                alt="Responsive marketing website across devices"
+                fill
+                sizes="(max-width:900px) 50vw, 25vw"
+                style={{ objectFit: 'cover', objectPosition: 'top center' }}
+                loading="lazy"
+              />
+              <figcaption>Responsive Sites</figcaption>
+            </figure>
+            <figure className="web-collage-item">
+              <Image
+                src="/work-uxui-1.png"
+                alt="Web application interface design"
+                fill
+                sizes="(max-width:900px) 50vw, 25vw"
+                style={{ objectFit: 'cover', objectPosition: 'top center' }}
+                loading="lazy"
+              />
+              <figcaption>Web Apps</figcaption>
+            </figure>
+            <figure className="web-collage-item">
+              <Image
+                src="/work-uxui-3.png"
+                alt="E-commerce and content layout design"
+                fill
+                sizes="(max-width:900px) 50vw, 25vw"
+                style={{ objectFit: 'cover', objectPosition: 'top center' }}
+                loading="lazy"
+              />
+              <figcaption>E-Commerce</figcaption>
+            </figure>
+            <figure className="web-collage-item">
+              <Image
+                src="/work-responsive-2.png"
+                alt="Mobile-first responsive layout"
+                fill
+                sizes="(max-width:900px) 50vw, 25vw"
+                style={{ objectFit: 'cover', objectPosition: 'top center' }}
+                loading="lazy"
+              />
+              <figcaption>Mobile First</figcaption>
+            </figure>
+          </div>
         </div>
         <div className="split-content" style={{ background: '#caf0f8' }} data-reveal="right">
           <div className="web-solutions-card split-content-inner">

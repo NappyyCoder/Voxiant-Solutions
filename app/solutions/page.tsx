@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
+import HeroBlobs from '@/components/HeroBlobs'
 
 export const metadata: Metadata = { title: 'Our Solutions · Voxiant Solutions' }
 
@@ -10,7 +10,7 @@ export const metadata: Metadata = { title: 'Our Solutions · Voxiant Solutions' 
 const services = [
   {
     num: '01',
-    accent: '#023e8a',
+    accent: '#0d3b66',
     title: 'Web Strategy',
     text: 'Roadmaps that line up growth goals with how people discover and move through your site, so every build earns its budget.',
     icon: (
@@ -24,9 +24,9 @@ const services = [
   },
   {
     num: '02',
-    accent: '#00b4d8',
-    title: 'Website Development',
-    text: 'Fast, resilient sites built for clarity and conversion, with clear structure and UX that build trust quickly.',
+    accent: '#1b6ca8',
+    title: 'Web Programming',
+    text: 'Custom-built, reliable sites and web apps with clean code and clear structure, so they load fast and are easy to update.',
     icon: (
       <svg viewBox="0 0 48 36" fill="none" width="28" height="22" aria-hidden="true">
         <rect x="3" y="3" width="42" height="30" rx="3" stroke="currentColor" strokeWidth="2.5"/>
@@ -37,7 +37,7 @@ const services = [
   },
   {
     num: '03',
-    accent: '#f77f00',
+    accent: '#1f7a8c',
     title: 'Online Marketing',
     text: 'Campaigns across search, social, and inbox that reflect how people browse today, with reporting you can actually use.',
     icon: (
@@ -50,7 +50,7 @@ const services = [
   },
   {
     num: '04',
-    accent: '#0077b6',
+    accent: '#155e8a',
     title: 'Ecommerce Solutions',
     text: 'Store design, product setup, and marketing that connects to checkout, so carts feel effortless and products get seen.',
     icon: (
@@ -63,7 +63,7 @@ const services = [
   },
   {
     num: '05',
-    accent: '#0891b2',
+    accent: '#2d6a8f',
     title: 'Search Engine Optimization',
     text: 'Technical and content SEO that respects how search works now, so qualified traffic finds you, not just impressions.',
     icon: (
@@ -76,7 +76,7 @@ const services = [
   },
   {
     num: '06',
-    accent: '#f5a834',
+    accent: '#3a5a78',
     title: 'Brand Identity',
     text: 'Logos, systems, print, and verbal identity that read as one story, so audiences remember you on every touchpoint.',
     icon: (
@@ -87,7 +87,7 @@ const services = [
   },
   {
     num: '07',
-    accent: '#48cae4',
+    accent: '#0a6e7a',
     title: 'Graphic Design',
     text: 'Campaigns, signage, packaging, and collateral with the same craft as your digital work: always on brand.',
     icon: (
@@ -102,7 +102,7 @@ const services = [
   },
   {
     num: '08',
-    accent: '#074c6d',
+    accent: '#244d6b',
     title: 'Social Media',
     text: 'Content and posting tailored to each platform, keeping your social posts, website, and brand voice aligned.',
     icon: (
@@ -124,9 +124,7 @@ export default function SolutionsPage() {
       ══════════════════════════════════════ */}
       <div className="sol-hero">
         {/* decorative blobs */}
-        <div className="sol-hero-blob sol-hero-blob--1" aria-hidden="true" />
-        <div className="sol-hero-blob sol-hero-blob--2" aria-hidden="true" />
-        <div className="sol-hero-blob sol-hero-blob--3" aria-hidden="true" />
+        <HeroBlobs />
 
         <div className="sol-hero-inner">
           <span className="sol-hero-eyebrow" data-reveal="up">Voxiant Solutions</span>
@@ -143,7 +141,7 @@ export default function SolutionsPage() {
 
         <div className="sol-hero-badges" aria-hidden="true">
           <span className="sol-badge">8 disciplines</span>
-          <span className="sol-badge sol-badge--accent">Strategy to launch</span>
+          <span className="sol-badge">Strategy to launch</span>
           <span className="sol-badge">One coordinated team</span>
         </div>
       </div>
@@ -188,37 +186,6 @@ export default function SolutionsPage() {
 
         </div>
       </section>
-
-      {/* ══════════════════════════════════════
-          ELEVATE CTA
-      ══════════════════════════════════════ */}
-      <div className="elevate-section">
-        <div className="elevate-img" data-reveal="left">
-          <Image
-            src="/work-uxui-5.png"
-            alt="Portfolio of digital design work: app screens and brand projects"
-            fill
-            sizes="(max-width:900px) 100vw, 50vw"
-            style={{ objectFit: 'cover', objectPosition: 'center center' }}
-            loading="lazy"
-          />
-        </div>
-        <div className="elevate-content" data-reveal="right">
-          <div className="elevate-content-inner">
-            <span className="elevate-eyebrow">Next step</span>
-            <h2>Tell us what you&apos;re solving for</h2>
-            <div className="elevate-line" />
-            <p>
-              We&apos;ll reply with honest fit, timeline, and a practical plan, from a focused sprint to a longer
-              roadmap, matched to how your <strong>team</strong> actually works.
-            </p>
-            <div className="elevate-btns">
-              <Link href="/contact" className="btn btn-white">Book an intro call</Link>
-              <Link href="/our-process" className="btn btn-ghost-white">Our process</Link>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   )
 }

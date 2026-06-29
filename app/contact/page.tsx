@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useActionState } from 'react'
 import { submitContactForm, type ContactResult } from './actions'
+import HeroBlobs from '@/components/HeroBlobs'
 
 function ArrowIcon() {
   return (
@@ -20,15 +21,15 @@ export default function ContactPage() {
 
   return (
     <>
-      <div className="page-hero hero-contact">
-        <div className="contact-blob-wrap contact-blobs" aria-hidden="true">
-          <div className="blob-circle blob-c1" />
-          <div className="blob-circle blob-c2" />
-          <div className="blob-circle blob-c3" />
-          <div className="blob-circle blob-c4" />
-          <div className="blob-circle blob-c5" />
+      <div className="page-hero">
+        <HeroBlobs />
+        <div className="page-hero-inner">
+          <span className="page-hero-eyebrow">Get In Touch</span>
+          <h1 data-reveal="up">Contact Us</h1>
+          <p className="page-hero-sub">
+            Tell us about your project and we&apos;ll get back to you with next steps.
+          </p>
         </div>
-        <h1 data-reveal="up">Contact Us</h1>
       </div>
 
       <section className="contact-form-section">

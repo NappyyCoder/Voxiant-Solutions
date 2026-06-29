@@ -34,10 +34,10 @@ export default async function ProjectPage({
   const totalSteps = project.steps.length
 
   return (
-    <div className="project-page">
+    <div className="project-page" style={{ '--accent': project.accentColor } as React.CSSProperties}>
 
       {/* ── Hero ── */}
-      <div className="project-hero" style={{ '--accent': project.accentColor } as React.CSSProperties}>
+      <div className="project-hero">
         <div className="project-hero-blobs" aria-hidden="true">
           <div className="prj-blob-1" />
           <div className="prj-blob-2" />
@@ -54,15 +54,16 @@ export default async function ProjectPage({
           <p className="project-tagline">{project.tagline}</p>
         </div>
         <div className="project-hero-cover">
-          <Image
-            src={project.cover}
-            alt={project.coverAlt}
-            fill
-            priority
-            sizes="(max-width:900px) 100vw, 50vw"
-            style={{ objectFit: 'cover', objectPosition: 'top center' }}
-          />
-          <div className="project-hero-cover-overlay" />
+          <div className="project-hero-cover-frame">
+            <Image
+              src={project.cover}
+              alt={project.coverAlt}
+              fill
+              priority
+              sizes="(max-width:900px) 100vw, 50vw"
+              style={{ objectFit: 'contain', objectPosition: 'center center' }}
+            />
+          </div>
         </div>
       </div>
 
@@ -94,13 +95,15 @@ export default async function ProjectPage({
               data-reveal="up"
             >
               <div className="process-step-img">
-                <Image
-                  src={step.image}
-                  alt={step.alt}
-                  fill
-                  sizes="(max-width:900px) 100vw, 55vw"
-                  style={{ objectFit: 'cover', objectPosition: 'top center' }}
-                />
+                <div className="process-step-frame">
+                  <Image
+                    src={step.image}
+                    alt={step.alt}
+                    fill
+                    sizes="(max-width:900px) 100vw, 55vw"
+                    style={{ objectFit: 'contain', objectPosition: 'center center' }}
+                  />
+                </div>
               </div>
               <div className="process-step-content">
                 <span className="process-step-num">
@@ -108,6 +111,7 @@ export default async function ProjectPage({
                   <span className="process-step-total">/{String(totalSteps).padStart(2, '0')}</span>
                 </span>
                 <h3>{step.title}</h3>
+                <span className="process-step-rule" aria-hidden="true" />
                 <p>{step.description}</p>
               </div>
             </div>

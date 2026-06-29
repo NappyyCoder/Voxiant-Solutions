@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import ScrollTopButton from '@/components/ScrollTopButton'
+import HeroBlobs from '@/components/HeroBlobs'
 
 export const metadata: Metadata = { title: 'Our Process — Voxiant Solutions' }
 
@@ -9,19 +10,26 @@ export default function OurProcessPage() {
   return (
     <>
       {/* ── HERO ── */}
-      <div className="page-hero hero-process">
-        <h1>Our Process</h1>
+      <div className="page-hero">
+        <HeroBlobs />
+        <div className="page-hero-inner">
+          <span className="page-hero-eyebrow">How We Work</span>
+          <h1>Our Process</h1>
+          <p className="page-hero-sub">
+            A clear, collaborative path from first conversation to launch and beyond.
+          </p>
+        </div>
       </div>
 
       {/* ── SECTION 1: Image LEFT | Text RIGHT ── */}
       <div className="process-section">
         <div className="proc-img" data-reveal="left">
           <Image
-            src="/work-uxui-3.png"
+            src="/work-uxui-1.png"
             alt="Voxiant team collaborating on strategy"
             fill
             sizes="(max-width:900px) 100vw, 50vw"
-            style={{ objectFit: 'cover', objectPosition: 'center top' }}
+            className="proc-img-photo"
             loading="lazy"
           />
         </div>
@@ -57,11 +65,11 @@ export default function OurProcessPage() {
         </div>
         <div className="proc-img" data-reveal="right">
           <Image
-            src="/work-truck-1.png"
-            alt="Designers and developers working together"
+            src="/work-responsive-1.png"
+            alt="Responsive website design across devices"
             fill
             sizes="(max-width:900px) 100vw, 50vw"
-            style={{ objectFit: 'cover', objectPosition: 'center center' }}
+            className="proc-img-photo"
             loading="lazy"
           />
         </div>
@@ -75,7 +83,7 @@ export default function OurProcessPage() {
             alt="Planning and strategy at Voxiant"
             fill
             sizes="(max-width:900px) 100vw, 50vw"
-            style={{ objectFit: 'cover', objectPosition: 'center center' }}
+            className="proc-img-photo"
             loading="lazy"
           />
         </div>

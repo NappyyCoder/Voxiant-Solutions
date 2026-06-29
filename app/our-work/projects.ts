@@ -21,7 +21,7 @@ export const projects: Project[] = [
   {
     slug: 'movie-poster',
     title: 'Movie Poster',
-    category: 'Graphic Design',
+    category: 'Print Design',
     tagline: 'Movie poster design from concept to print.',
     description:
       'A full cinematic poster designed from the ground up, concept to print-ready file. Every element, from typography to photo composition, was crafted to capture the mood and narrative of the film.',
@@ -81,78 +81,9 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: 'truck-wrap',
-    title: 'Truck Wrap',
-    category: 'Vehicle Branding',
-    tagline: 'Vehicle wrap design built for visibility on the road.',
-    description:
-      'Vehicle wrap design for a fleet truck, from concept through print-ready artwork. The full vehicle surface was used for clear, readable brand messaging.',
-    cover: '/work-truck-1.png',
-    coverAlt: 'Truck wrap design',
-    accentColor: '#00b4d8',
-    steps: [
-      {
-        title: 'Client Brief & Reference',
-        description:
-          'We gathered brand guidelines, existing assets, and dimensional vehicle specs. Reference photography from all angles informed the spatial layout and helped us plan for panel breaks and body contours.',
-        image: '/work-truck-1.png',
-        alt: 'Client brief and references',
-      },
-      {
-        title: 'Initial Concept Sketch',
-        description:
-          'Rough layout sketches explored different design directions, bold side panels, door treatments, and hood graphics were all evaluated for visual impact and brand recognition at speed.',
-        image: '/work-truck-2.png',
-        alt: 'Initial concept sketch',
-      },
-      {
-        title: 'Layout & Proportions',
-        description:
-          'The approved concept was translated into precise digital templates matched to the truck\'s actual dimensions, accounting for body contours, panel breaks, and physical installation constraints.',
-        image: '/work-truck-3.png',
-        alt: 'Layout and proportions',
-      },
-      {
-        title: 'Typography Placement',
-        description:
-          'Business name, tagline, and contact information were positioned for maximum readability at highway speeds. Placement was tested at multiple simulated viewing distances.',
-        image: '/work-truck-4.png',
-        alt: 'Typography placement',
-      },
-      {
-        title: 'Color Application',
-        description:
-          'Brand colors were applied across all panels with careful attention to how they wrap around edges, curves, and recesses, maintaining consistency across the full vehicle surface.',
-        image: '/work-truck-5.png',
-        alt: 'Color application',
-      },
-      {
-        title: 'Vehicle Mockup',
-        description:
-          'A photorealistic mockup was presented to the client showing the complete wrap applied to the actual truck model, enabling accurate pre-production approval before any material was cut.',
-        image: '/work-truck-6.png',
-        alt: 'Vehicle mockup',
-      },
-      {
-        title: 'Detail Refinement',
-        description:
-          'Client-requested revisions were incorporated, adjusting panel alignment, brightening accent colors, and sharpening logo reproduction for flawless large-format printing.',
-        image: '/work-truck-7.png',
-        alt: 'Detail refinement',
-      },
-      {
-        title: 'Print-Ready Final',
-        description:
-          'Final artwork was delivered in print-ready format with full bleed, correct color profiles, and resolution specifications for large-format vinyl printing and professional installation.',
-        image: '/work-truck-8.png',
-        alt: 'Print-ready final artwork',
-      },
-    ],
-  },
-  {
     slug: 'bulls-infographic',
     title: 'Bulls Infographic',
-    category: 'Infographic Design',
+    category: 'Digital Design',
     tagline: 'Complex data, made instantly readable.',
     description:
       'A data-rich Chicago Bulls infographic that transforms statistics and narrative into a visually compelling, shareable story. Every design decision, from icon choice to color hierarchy, serves clarity and engagement.',
@@ -193,7 +124,7 @@ export const projects: Project[] = [
   {
     slug: 'celery-bog',
     title: 'Celery Bog',
-    category: 'Environmental Design',
+    category: 'Graphic Design',
     tagline: 'Design for a nature preserve that explains the habitat clearly.',
     description:
       'Visual design for Celery Bog, a nature preserve project that combines accurate information with approachable graphics for the public.',
@@ -330,7 +261,7 @@ export const projects: Project[] = [
   {
     slug: 'uxui-redesign',
     title: 'UX / UI Redesign',
-    category: 'UX / UI Design',
+    category: 'UX / UI',
     tagline: 'UX/UI redesign based on user research and testing.',
     description:
       'A UX/UI redesign that audited an existing product, identified friction points, and delivered a cleaner, more intuitive interface based on user research.',
